@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  min-width: 1080px;
+  min-width: 1500px;
+  max-width:1900px;
 } 
 
 #menu {
