@@ -10,9 +10,15 @@ a {
 
 button {
     margin: 20px;
+<<<<<<< HEAD
 }
 
 .custom-btn {
+=======
+  }
+  .custom-btn {
+   
+>>>>>>> be75b20dd88f5db361e84e1489479ad69e2c4d8e
     width: 45%;
     height: 18%;
     color: #fff;
@@ -33,6 +39,7 @@ button {
 /* 9 */
 
 .btn-9 {
+  
     border: none;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -72,7 +79,13 @@ button {
     margin-left: 10px;
 }
 
+<<<<<<< HEAD
 .btn-16:after {
+=======
+  }
+  
+  .btn-16:after {
+>>>>>>> be75b20dd88f5db361e84e1489479ad69e2c4d8e
     position: absolute;
     content: "";
     width: 0;
@@ -97,4 +110,11 @@ button {
 
 .btn-16:active {
     top: 2px;
+<<<<<<< HEAD
+=======
+  }
+
+a{
+  text-decoration:none;
+>>>>>>> be75b20dd88f5db361e84e1489479ad69e2c4d8e
 }
