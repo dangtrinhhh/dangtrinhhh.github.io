@@ -6,6 +6,7 @@ body {
 }
 
 .tagimg {
+  display: none;
   opacity: 0.8;
   width: 10%;
   float: left;
@@ -115,7 +116,7 @@ body {
 .card-form__button {
   width: 100%;
   height: 55px;
-  background: #2364d2;
+  background: #4caf50;
   border: none;
   border-radius: 5px;
   font-size: 22px;
