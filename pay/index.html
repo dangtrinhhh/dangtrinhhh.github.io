@@ -4,13 +4,45 @@
   <meta charset="UTF-8">
   <title>Thanh toán Credit Card</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="data/logo.png" type="image/x-icon" />
 
 </head>
 <body>
+
 <!-- partial:index.partial.html -->
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "111174981193210");
+  chatbox.setAttribute("attribution", "biz_inbox");
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<a href="../">
+  <img alt="index.html" class = "tagimg" src="../data/logo.png">
+</a>
 <div class="wrapper" id="app">
+ 
     <div class="card-form">
+      
       <div class="card-list">
         <div class="card-item" v-bind:class="{ '-active' : isCardFlipped }">
           <div class="card-item__side -front">
@@ -160,10 +192,11 @@
             </div>
           </div>
         </div>
-
-        <button class="card-form__button">
-          Submit
-        </button>
+        
+          <button class="card-form__button" onclick="history.go(-1)">
+            Thanh Toán Ngay
+          </button>
+        
       </div>
     </div>
     
