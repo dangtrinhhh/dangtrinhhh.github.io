@@ -30,14 +30,6 @@ body {
   display: inline-block;
 }
 
-.navname {
-  margin-left: 5px;
-  color: rgb(0, 0, 0);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;
-  text-transform: uppercase;
-}
-
 #nav {
   display: inline-block;
   background-color: #f5f5f5;
@@ -55,7 +47,7 @@ body {
   padding: 0 24px;
   display: block;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 #nav>li:hover>a,
@@ -153,6 +145,7 @@ body {
 }
 
 .subtitle {
+  display:none;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 11px;
   height: 90px;
