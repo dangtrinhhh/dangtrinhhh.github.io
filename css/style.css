@@ -93,6 +93,13 @@ body {
   margin: 40px;
 } 
 
+.vfooter {
+  display :none;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  float: bottom;
+}
+
 .classgame {
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
   width: 100%;
@@ -122,17 +129,14 @@ body {
 }
 
 .container {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   margin-top: 50px;
   margin-left: 15px;
   margin-right: 10px;
   width: 22%;
-  float: left;
+  position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 4%;
-  
+  float: left;  
 }
 
 .container:hover {
