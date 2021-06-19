@@ -122,11 +122,16 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+#body-section {
+    width: 100%;
+}
+
 .content {
     width: 64%;
     margin-left: 18%;
     margin-right: 18%;
     position: relative;
+    overflow: hidden;
 }
 
 .container {
@@ -134,12 +139,11 @@ body {
     margin-left: 15px;
     margin-right: 10px;
     width: 22%;
-    position: inherit;
+    position: relative;
     display: block;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 4%;
     float: left;
-    overflow: hidden;
 }
 
 .container:hover {
@@ -197,8 +201,8 @@ body {
     margin-right: 15px;
 }
 
-footer {
+#footer {
     display: block;
-    position: relative;
-    float: right;
+    text-align: center;
+    padding: 100px 0;
 }
