@@ -19,8 +19,8 @@ button {
     height: 18%;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 12px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     font-weight: 500;
     background: transparent;
@@ -33,11 +33,11 @@ button {
 }
 
 .custom-btnviet {
-    width: 12%;
     height: 15%;
     color: #f5f5f5;
     border-radius: 5px;
     padding: 10px 12px;
+    margin-left: 10px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -53,7 +53,6 @@ button {
 /* 9 */
 
 .btn-9 {
-  
     border: none;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -120,19 +119,21 @@ button {
     top: 2px;
 }
 
+
 /* 14 */
+
 .btn-14 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
-
     background: #f5f5f5;
     color: black;
     border: none;
     z-index: 1;
     font-weight: bold;
     margin-bottom: 30px;
-  }
-  .btn-14:after {
+}
+
+.btn-14:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -143,19 +144,20 @@ button {
     border-radius: 5px;
     background-color: #eaf818;
     background-image: linear-gradient(315deg, #016fffc0 25%, #f416fc 74%);
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5);
     transition: all 0.3s ease;
-  }
-  
-  .btn-14:hover {
+}
+
+.btn-14:hover {
     color: rgb(243, 243, 243);
-  }
-  .btn-14:hover:after {
+}
+
+.btn-14:hover:after {
     top: auto;
     bottom: 0;
     height: 100%;
-  }
-  .btn-14:active {
+}
+
+.btn-14:active {
     top: 2px;
-  }
-  
+}
