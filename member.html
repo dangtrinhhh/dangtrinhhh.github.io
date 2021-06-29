@@ -3,24 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Thành viên</title>
-  <link rel="stylesheet" href="./css/member.css">
+  <link rel="stylesheet" href="/css/member.css">
   <link rel="icon" href="data/logo.png" type="image/x-icon" />
 </head>
 <body>
+  <div id="fb-root"></div>
 
-    <a href="../index.html">
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111174981193210");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="classgame">
+      Thành Viên
+    </div>
+    <a target="_blank"  href="https://groups.google.com/g/g1-game">
+      <img class = "ggroup" src="data/ggroup.png">
+    </a>
+    <a href="/index.html">
       <div class="header"> 
           Group 1 Game Store
       </div>   
     </a>
-
-    <a href="../index.html">
-      <img alt="index.html" class = "tagimg" src="data/logo.png">
-    </a>
-          
-    <a target="_blank"  href="https://groups.google.com/g/g1-game">
-      <img class = "ggroup" src="data/ggroup.png">
-    </a>
+    
 
   <div class = "tendanhsach">
     Danh Sách Thành Viên
@@ -269,4 +293,13 @@
     </script>
   
 </body>
+<footer>
+  <div class ="makeby">
+      Được phát triển và thiết kế bởi 
+      <a href="https://github.com/unripe-mango">
+          unripe mango
+          <img class="mango" src="/data/mango.png">
+      </a>
+  </div>   
+</footer>
 </html>

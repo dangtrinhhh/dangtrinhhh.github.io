@@ -150,13 +150,13 @@
     background-color: rgba(11, 15, 39, 0.83);
   }
   .slide--2__letter {
-    background: url("../data/hinh2.jpg") center center no-repeat;
+    background: url("/data/hinh2.jpg") center center no-repeat;
     background-position: 0px center, 0px center;
     background-size: cover;
   }
   .slide--3__darkbg {
     left: -100%;
-    background: url("../data/hinh3.jpg") center center no-repeat;
+    background: url("/data/hinh3.jpg") center center no-repeat;
     background-size: cover;
     background-position: 0px center, 0px center;
     transform: translate3d(0, 0, 0);
@@ -172,7 +172,7 @@
     background-color: rgba(11, 15, 39, 0.83);
   }
   .slide--3__letter {
-    background: url("../data/hinh3.jpg") center center no-repeat;
+    background: url("/data/hinh3.jpg") center center no-repeat;
     background-position: 0px center, 0px center;
     background-size: cover;
   }
@@ -200,7 +200,7 @@
   }
   .slide--5__darkbg {
     left: -200%;
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--5-min-min.jpg") center center no-repeat;
+    background: url("/data/hinh5.jpg") center center no-repeat;
     background-size: cover;
     background-position: 0px center, 0px center;
     transform: translate3d(0, 0, 0);
@@ -216,7 +216,7 @@
     background-color: rgba(11, 15, 39, 0.83);
   }
   .slide--5__letter {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--5-min-min.jpg") center center no-repeat;
+    background: url("/data/hinh5.jpg") center center no-repeat;
     background-position: 0px center, 0px center;
     background-size: cover;
   }

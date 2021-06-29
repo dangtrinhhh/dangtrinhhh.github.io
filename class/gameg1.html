@@ -23,19 +23,46 @@
    
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
+    <img src="/data/g1cover.jpg" class="cover">
 </head>
 
 <body>
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111174981193210");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div id="body-section"></div>
+    <div class="classgame">
+        Độc Quyền
+    </div>
     <a href="../index.html">
         <div class="header"> 
             Group 1 Game Store
         </div>   
     </a>
-    <div class="classgame">
-        Game Độc Quyền
-    </div>
+  
     <div id="menu">
         <!-- Begin nav -->
         <ul id="nav">
@@ -66,36 +93,38 @@
 
         <div class="content">
 
-            <a href="games/tuan2">
+            <a href="/games/tuan2">
                 <div class="container">
                    <img src="../images/g1game/tuan2/hinh1.jpg"
                        alt="" class="img">
                   <div class="title">
                        Green Mario
                    </div>
+                   <img class="saleoff" src="/data/bigsale.gif">
                    <div class="oldprice">
-                       190.000 VND
+                       500.000 VND
                    </div>
                    <div class="price">
-                       110.000 VND
+                       0 VND
                    </div>
                    <div class="frame">
                        <button class="custom-btn btn-9"> <a target="__blank" href="#">Mua Ngay</a></button> 
                    </div>
                </div>
                
-             <a href="games/tuan1">
+             <a href="/games/tuan1">
              <div class="container">
                 <img src="../images/g1game/tuan1/hinh1.jpg"
                     alt="" class="img">
                <div class="title">
                     Find Doll
                 </div>
+                <img class="saleoff" src="/data/bigsale.gif">
                 <div class="oldprice">
-                    80.000 VND
+                    300.000 VND
                 </div>
                 <div class="price">
-                    5.000 VND
+                    0 VND
                 </div>
                 <div class="frame">
                                 <button class="custom-btn btn-9"> <a target="__blank" href="#">Mua Ngay</a></button>
@@ -111,6 +140,7 @@
                <div class="title">
                     JUMP JUMP
                 </div>
+                <img class="saleoff" src="/data/bigsale.gif">
                 <div class="oldprice">
                     290.000 VND
                 </div>
@@ -129,6 +159,7 @@
                <div class="title">
                     Fighting Skeleton!
                 </div>
+                <img class="saleoff" src="/data/bigsale.gif">
                 <div class="oldprice">
                     190.000 VND
                 </div>
@@ -143,37 +174,39 @@
         </div>
 
         
-        <div class="content">\
-            <a href="games/thanh1">
+        <div class="content">
+            <a href="/games/thanh1">
             <div class="container">
                <img src="../images/g1game/thanh1/hinh1.jpg"
                    alt="" class="img">
               <div class="title">
                    Angry Thành
                </div>
+               <img class="saleoff" src="/data/bigsale.gif">
                <div class="oldprice">
-                   180.000 VND
+                   750.000 VND
                </div>
                <div class="price">
-                   90.000 VND
+                   0 VND
                </div>
                <div class="frame">
                     <button class="custom-btn btn-9"> <a target="__blank" href="#">Mua Ngay</a></button>
                 </div>
            </div>
 
-           <a href="games/truong1">
+           <a href="/games/truong1">
            <div class="container">
             <img src="../images/g1game/truong1/hinh1.jpg"
                 alt="" class="img">
            <div class="title">
                 Rabbit Dumps 
             </div>
+            <img class="saleoff" src="/data/bigsale.gif">
             <div class="oldprice">
-                830.000 VND
+                100.000 VND
             </div>
             <div class="price">
-                50.000 VND
+                0 VND
             </div>
             <div class="frame">
                  <button class="custom-btn btn-9"> <a target="__blank" href="#">Mua Ngay</a></button>
@@ -185,5 +218,13 @@
 
 
 </body>
-
+<footer>
+    <div class ="makeby">
+        Được phát triển và thiết kế bởi 
+        <a href="https://github.com/unripe-mango">
+            unripe mango
+            <img class="mango" src="/data/mango.png">
+        </a>
+    </div>   
+</footer>
 </html>

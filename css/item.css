@@ -14,19 +14,17 @@
     position: relative;
     width: 58.5%;
     float: left;
-    display: inline-block;
     padding-left: 30px;
     padding-right: 10px;
     margin-left: 20px;
     margin-top: 20px;
     overflow: hidden;
     line-height: 1.4;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 .game-image {
     width: 100%;
-    display: inline-block;
     float: left;
     margin-top: 20px;
     margin-left: 20px;
@@ -37,7 +35,6 @@
 }
 
 .share-icon {
-    display: inline-block;
     margin-left: 20px;
     margin-top: 20px;
     float: left;
@@ -54,7 +51,7 @@
     font-size: 50px;
     line-height: 1.4;
     text-align: center;
-    color: #aa3e03;
+    color: #040fa8;
 }
 
 .subtitle1 {
@@ -64,7 +61,7 @@
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .subtitle2 {
@@ -80,7 +77,6 @@
 
 .nav {
     display: inline-block;
-    posttion: fixed;
 }
 
 .text-section .price {
@@ -96,6 +92,7 @@
 .item-btn,
 .item-btn2 {
     width: 40%;
+    font-size: 20px;
 }
 
 .item-btn:hover {
@@ -113,6 +110,7 @@
 
 .frame {
     padding-top: 20px;
+
 }
 
 .attribute {
@@ -128,17 +126,17 @@
 
 .a1 {
     color: #fff;
-    background-image: linear-gradient(90deg, #ff4902, rgb(236, 240, 17)), url();
+    background-image: linear-gradient(90deg, #e100ff, rgb(0, 153, 255)), url();
 }
 
 .a2 {
     color: #fff;
-    background-image: linear-gradient(90deg, rgb(39, 60, 247), rgb(246, 247, 241)), url();
+    background-image: linear-gradient(90deg, rgb(0, 79, 248), rgb(139, 15, 88)), url();
 }
 
 .a3 {
     color: #fff;
-    background-image: linear-gradient(90deg, rgb(16, 17, 17), rgb(246, 247, 241)), url();
+    background-image: linear-gradient(90deg, rgb(1, 179, 233), rgb(255, 0, 221)), url();
 }
 
 .olditemprice {
@@ -157,3 +155,7 @@
     font-weight: bold;
     margin-left: 15px;
   }
+
+.help {
+    margin-left: 50px;
+}
