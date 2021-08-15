@@ -6,257 +6,302 @@
     <title>Game Chiến Thuật</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/beauty.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/beauty.css">
     <meta name="viewport" content="width=device-width, initial-scale=">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link el="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="icon" href="../data/logo.png" type="image/x-icon" />
+    <link rel="icon" href="/data/logo.png" type="image/x-icon" />
     <style>
         body {
             background-color: #f5f5f5;
         }
     </style>
-
+   
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
+    <img src="/data/chienthuat.jpg" class="cover">
 </head>
 
 <body>
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111174981193210");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div id="body-section"></div>
-    <a href="../index.html">
-        <div class="header">
-            Group 1 Game Store
-        </div>
-    </a>
     <div class="classgame">
         Chiến Thuật
     </div>
+    <a href="/index.html">
+
+        <div class="header"> 
+            Group 1 Game Store
+        </div>   
+    </a>
     <div id="menu">
         <!-- Begin nav -->
         <ul id="nav">
             <li>
-                <button class="custom-btnviet btn-14">
+                <button class="custom-btnclass btn-14">
                     <a class="navname" href="#">
                         Thể loại
                     </a>
                 </button>
                 <ul class="subnav">
-                    <li><a href="../class/nhapvai.html">Nhập vai</a></li>
-                    <li><a href="../class/chienthuat.html">Chiến thuật</a></li>
-                    <li><a href="../class/bansung.html">Bắn súng</a></li>
-                    <li><a href="../class/sinhton.html">Sinh tồn</a></li>
-                    <li><a href="../class/giaitri.html">Giải Trí</a></li>
-                    <li><a href="../class/duaxe.html">Đua xe</a></li>
-                    <li><a href="../class/thoitrang.html">Thời Trang</a></li>
+                    <li><a href="/class/nhapvai.html">Nhập vai</a></li>
+                    <li><a href="/class/chienthuat.html">Chiến thuật</a></li>
+                    <li><a href="/class/bansung.html">Bắn súng</a></li>
+                    <li><a href="/class/sinhton.html">Sinh tồn</a></li>
+                    <li><a href="/class/giaitri.html">Giải Trí</a></li>
+                    <li><a href="/class/duaxe.html">Đua xe</a></li>
+                    <li><a href="/class/thoitrang.html">Thời Trang</a></li>
                 </ul>
             </li>
-            <button class="custom-btnviet btn-14"> <a href="../class/gameg1.html">Game G1</a></button>
+            <button class="custom-btnviet btn-14"> <a target="__blank" href="../class/gameg1.html">Game G1</a></button>         
             <button class="custom-btnviet btn-14"> <a target="__blank" href="../member.html">Thành Viên</a></button>
-            <button class="custom-btnviet btn-14"> <a target="__blank" href="../pay">Thanh Toán</a></button>
             <button class="custom-btnviet btn-14"> <a target="__blank" href="https://www.facebook.com/g1gamestore">Liên Hệ</a></button>
-            <button class="custom-btnviet btn-14"> <a href="../apply">Đăng Game</a></button>
+            <button class="custom-btnviet btn-14"> <a target="__blank" href="../apply">Đăng Game</a></button>
+                
             <!-- End nav -->
         </ul>
     </div>
 
+        <div class="content">
+             <a href="/games/11">
+             <div class="container">
+                <img src="../images/11/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    League of Legends
+                </div>
+               <div class="oldprice">
+                    260.000 VND
+               </div>
+               <div class="price">
+                    0.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/11">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
+             <a href="/games/14">
+             <div class="container">
+                <img src="../images/14/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Crusader Kings II
+                </div>
+               <div class="oldprice">
+                    821.000 VND
+               </div>
+               <div class="price">
+                    208.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/14">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
+             <a href="/games/33">
+             <div class="container">
+                <img src="../images/33/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Warpath
+                </div>
+               <div class="oldprice">
+                    390.000 VND
+               </div>
+               <div class="price">
+                    72.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/33">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-    </div>
+             <a href="/games/37">
+             <div class="container">
+                <img src="../images/37/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Age of Empire II
+                </div>
+               <div class="oldprice">
+                    928.000 VND
+               </div>
+               <div class="price">
+                    171.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/37">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-
-    <div class="content">
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/14/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Crusader Kings II
-            </div>
-            <div class="subtitle">
-                Là một tựa game chiến thuật lịch sử bối cảnh nội dung tại châu Âu thời kỳ Trung cổ. Người chơi sẽ đóng vai một người cai trị vương quốc của mình, nhiệm vụ là phải bảo vệ, kiểm soát và phát triển, mở rộng bờ cõi.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://store.steampowered.com/app/203770/Crusader_Kings_II/">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://www.paradoxplaza.com/crusader-kings-ii/CKCK02GSK-MASTER.html">Website</a></button>
-            </div>
         </div>
 
-    </div>
 
+        <div class="content">
+             <a href="/games/40">
+             <div class="container">
+                <img src="../images/40/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    TEKKEN 7
+                </div>
+               <div class="oldprice">
+                    516.000 VND
+               </div>
+               <div class="price">
+                    207.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/40">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-    </div>
+             <a href="/games/46">
+             <div class="container">
+                <img src="../images/46/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Hearthstone
+                </div>
+               <div class="oldprice">
+                    382.000 VND
+               </div>
+               <div class="price">
+                    82.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/46">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
+             <a href="/games/47">
+             <div class="container">
+                <img src="../images/47/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Đột kích trong tầm ngắm
+                </div>
+               <div class="oldprice">
+                    733.000 VND
+               </div>
+               <div class="price">
+                    209.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/47">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-        <div class="container">
-            <img src="../images/23/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                League of Legends
-            </div>
-            <div class="subtitle">
-                Game xây dựng môi trường thi đấu cạnh tranh và tích hợp thời gian, chiến thuật thực chiến nhuần nhuyễn. Người chơi phải tấn công đánh phá các căn cứ mục đích cuối cùng của bạn và cả team là đánh phá được nhà chính của đối thủ
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://lienminh.garena.vn/download">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://lienminh.garena.vn/">Website</a></button>
-            </div>
+             <a href="/games/52">
+             <div class="container">
+                <img src="../images/52/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    OMG3Q
+                </div>
+               <div class="oldprice">
+                    558.000 VND
+               </div>
+               <div class="price">
+                    136.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/52">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
+
         </div>
 
-    </div>
 
+        <div class="content">
+             <a href="/games/54">
+             <div class="container">
+                <img src="../images/54/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Identity V
+                </div>
+               <div class="oldprice">
+                    342.000 VND
+               </div>
+               <div class="price">
+                    166.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/54">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-    </div>
+             <a href="/games/57">
+             <div class="container">
+                <img src="../images/57/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    BangBang
+                </div>
+               <div class="oldprice">
+                    862.000 VND
+               </div>
+               <div class="price">
+                    346.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/57">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/33/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Warpath
-            </div>
-            <div class="subtitle">
-                Nếu là một fan hâm mộ của dòng game chiến thuật chắc chắn bạn không nên bỏ qua Warpath. Game mang đến cho người chơi cảm nhận đầy chân thật, rõ nét về sự khốc liệt cũng như những cuộc chiến đã từng xảy ra trong lịch sử nhân loại.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://www.bluestacks.com/vi/apps/strategy/warpath-on-pc.html">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://warpath.lilith.com/">Website</a></button>
-            </div>
         </div>
 
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/37/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Age of Empire II
-            </div>
-            <div class="subtitle">
-                Là một tựa game chiến thuật xây dựng quân đội, thời Trung Cổ đó chính là chủ đề cho cốt truyện của phiên bản Đế Chế 2 này.Trong game các bạn sẽ phải xây dựng một đế chế hung mạnh riêng cho mình.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://www.fshare.vn/file/PHZ8XNA6PTPR?token=1622778024">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://www.ageofempires.com/games/aoeiide/">Website</a></button>
-            </div>
-        </div>
-
-        <div class="container">
-            <img src="../images/40/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                TEKKEN 7
-            </div>
-            <div class="subtitle">
-                Tekken 7 chắc chắn là một trong những series game đối kháng hay nhất hiện nay. Tekken 7 là phiên bản mới nhất trong dòng game Tekken mang đến một lối chơi ấn tượng và mới lạ, cùng với nhiều nhân vật mà bạn có thể lựa chọn.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://www.fshare.vn/file/M6OLOBBA8YXKNEQ?token=1622780799">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="http://www.tekken.com/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/46/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Hearthstone
-            </div>
-            <div class="subtitle">
-                Hearthstone (Heroes of Warcraft) là trò chơi đánh bài trực tuyến được Blizzard phát hành vào năm 2014.Trong trò chơi này, nhiệm vụ của người chơi rất đơn giản đó là tiêu diệt kẻ thù thông qua việc sử dụng các quái vật và bùa chú.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="http://bit.ly/1nRc3Ls">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://playhearthstone.com/">Website</a></button>
-            </div>
-        </div>
-
-        <div class="container">
-            <img src="../images/47/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Đột kích trong tầm ngắm
-            </div>
-            <div class="subtitle">
-                Đột Kích (CrossFire, thường được gọi là CF) - là Game thuộc thể loại FPS không dựa trên cốt truyện sẵn có. Đột Kích Là một trò chơi trực tuyến mang tính chiến thuật đồng đội rất cao.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://dotkich.goplay.vn/trang-chu/download/4281">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://dotkich.goplay.vn/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/52/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                OMG3Q
-            </div>
-            <div class="subtitle">
-                OMG 3Q là tựa game 3Q mới nhất thuộc thể loại game chiến thuật thẻ bài trên di động do VNG độc quyền phát hành. Trò chơi tái hiện các vị tướng quen thuộc của dòng game 3Q Tam Quốc như Triệu Vân, Trương Phi, Lưu Bị, Tào Tháo v.v
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://download.com.vn/omg-3q-124882">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://omg3q.zing.vn/">Website</a></button>
-            </div>
-        </div>
-
-        <div class="container">
-            <img src="../images/54/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Identity V
-            </div>
-            <div class="subtitle">
-                Đây là một trò chơi điện tử thuộc thể loại kinh dị bất đối xứng được phát triển và xuất bản bởi NetEase Games.Cốt truyện kể về một thám tử tên Orpheus đang cố làm sáng tỏ bí ẩn chưa có lời giải đáp đằng sau trò chơi giết người.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://idv.163.com/">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://www.identityvgame.com/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/57/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                BangBang
-            </div>
-            <div class="subtitle">
-                BangBang là Web-Game Casual trực tuyến thuộc thể loại bắn xe tăng thế hệ mới. Với giao diện tươi sáng, nhân vật và màu sắc sinh động, vui nhộn, cách điều khiển đầy linh hoạt và mang âm hưởng của Battle City.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://bitly.com.vn/1llwi6">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://bangbang.cmn.vn/trang-chu.html">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-    <div id="footer">
-        <p class="copyright">Copyright © 2021, Powered by dangtrinhhh.</p>
-    </div>
 
 </body>
 
+<footer>
+    <div class ="makeby">
+        Được phát triển và thiết kế bởi 
+        <a href="https://github.com/unripe-mango">
+            unripe mango
+            <img class="mango" src="/data/mango.png">
+        </a>
+    </div>   
+</footer>
 </html>

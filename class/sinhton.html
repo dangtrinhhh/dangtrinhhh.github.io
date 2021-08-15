@@ -6,271 +6,321 @@
     <title>Game Sinh Tồn</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/beauty.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/beauty.css">
     <meta name="viewport" content="width=device-width, initial-scale=">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link el="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="icon" href="../data/logo.png" type="image/x-icon" />
+    <link rel="icon" href="/data/logo.png" type="image/x-icon" />
     <style>
         body {
             background-color: #f5f5f5;
         }
     </style>
-
+   
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
+    <img src="/data/sinhton.jpg" class="cover">
 </head>
 
 <body>
-    <div id="body-section"></div>
-    <a href="../index.html">
-        <div class="header">
-            Group 1 Game Store
-        </div>
-    </a>
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111174981193210");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class="classgame">
         Sinh Tồn
-    </div>
+    <div id="body-section"></div>
+    <a href="../index.html">
+
+        </div>
+        <div class="header"> 
+            Group 1 Game Store
+        </div>   
+    </a>
     <div id="menu">
         <!-- Begin nav -->
         <ul id="nav">
             <li>
-                <button class="custom-btnviet btn-14">
+                <button class="custom-btnclass btn-14">
                     <a class="navname" href="#">
                         Thể loại
                     </a>
                 </button>
                 <ul class="subnav">
-                    <li><a href="../class/nhapvai.html">Nhập vai</a></li>
-                    <li><a href="../class/chienthuat.html">Chiến thuật</a></li>
-                    <li><a href="../class/bansung.html">Bắn súng</a></li>
-                    <li><a href="../class/sinhton.html">Sinh tồn</a></li>
-                    <li><a href="../class/giaitri.html">Giải Trí</a></li>
-                    <li><a href="../class/duaxe.html">Đua xe</a></li>
-                    <li><a href="../class/thoitrang.html">Thời Trang</a></li>
+                    <li><a href="/class/nhapvai.html">Nhập vai</a></li>
+                    <li><a href="/class/chienthuat.html">Chiến thuật</a></li>
+                    <li><a href="/class/bansung.html">Bắn súng</a></li>
+                    <li><a href="/class/sinhton.html">Sinh tồn</a></li>
+                    <li><a href="/class/giaitri.html">Giải Trí</a></li>
+                    <li><a href="/class/duaxe.html">Đua xe</a></li>
+                    <li><a href="/class/thoitrang.html">Thời Trang</a></li>
                 </ul>
             </li>
-            <button class="custom-btnviet btn-14"> <a href="../class/gameg1.html">Game G1</a></button>
+            <button class="custom-btnviet btn-14"> <a target="__blank" href="../class/gameg1.html">Game G1</a></button>         
             <button class="custom-btnviet btn-14"> <a target="__blank" href="../member.html">Thành Viên</a></button>
-            <button class="custom-btnviet btn-14"> <a target="__blank" href="../pay">Thanh Toán</a></button>
             <button class="custom-btnviet btn-14"> <a target="__blank" href="https://www.facebook.com/g1gamestore">Liên Hệ</a></button>
-            <button class="custom-btnviet btn-14"> <a href="../apply">Đăng Game</a></button>
+            <button class="custom-btnviet btn-14"> <a target="__blank" href="../apply">Đăng Game</a></button>
+                
             <!-- End nav -->
         </ul>
     </div>
 
+        <div class="content">
+             <a href="/games/4">
+             <div class="container">
+                <img src="../images/4/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Little Nightmares
+                </div>
+               <div class="oldprice">
+                    267.000 VND
+               </div>
+               <div class="price">
+                    126.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/4">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
+             <a href="/games/6">
+             <div class="container">
+                <img src="../images/6/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Free Fire
+                </div>
+               <div class="oldprice">
+                    2.000 VND
+               </div>
+               <div class="price">
+                    1.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/6">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
+             <a href="/games/9">
+             <div class="container">
+                <img src="../images/9/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Fortnite
+                </div>
+               <div class="oldprice">
+                    191.000 VND
+               </div>
+               <div class="price">
+                    115.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/9">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-        <div class="container">
-            <img src="../images/5/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Little Nightmares
-            </div>
-            <div class="subtitle">
-                Little Nightmares thuộc loại game giải đố. Người chơi sẽ được hóa thân vào một cô bé gầy gò ốm yếu tên là Six với bộ áo mưa màu vàng chói lóa. Và đó có lẽ cũng chính là điểm sáng duy nhất của cả trò chơi.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://bom.to/cSi6zfZquzKr6">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href=" https://en.bandainamcoent.eu/little-nightmares/little-nightmares">Website</a></button>
-            </div>
+             <a href="/games/12">
+             <div class="container">
+                <img src="../images/12/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Minecraft
+                </div>
+               <div class="oldprice">
+                    355.000 VND
+               </div>
+               <div class="price">
+                    162.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/12">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
+
         </div>
 
-    </div>
 
+        <div class="content">
+             <a href="/games/16">
+             <div class="container">
+                <img src="../images/16/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    ARK: Survival Evolved
+                </div>
+               <div class="oldprice">
+                    624.000 VND
+               </div>
+               <div class="price">
+                    246.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/16">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-    </div>
+             <a href="/games/20">
+             <div class="container">
+                <img src="../images/20/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    No Man’s Sky
+                </div>
+               <div class="oldprice">
+                    499.000 VND
+               </div>
+               <div class="price">
+                    117.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/20">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
+             <a href="/games/31">
+             <div class="container">
+                <img src="../images/31/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Dead Island
+                </div>
+               <div class="oldprice">
+                    838.000 VND
+               </div>
+               <div class="price">
+                    178.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/31">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-        <div class="container">
-            <img src="../images/12/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Dead Island
-            </div>
-            <div class="subtitle">
-                người chơi sẽ phải sinh tồn trên một hòn đảo cùng với 3 người nữa, giữa một đàn zombie chỉ chờ lao đến ăn thịt.Rất nhiều nhiệm vụ và mục tiêu được đặt ra, khi hoàn thành bạn sẽ được tăng EXP, nâng cấp những kỹ năng đặc biệt.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://promo.worldofwarships.asia/glows-27628/asia-vi/?pub_id=983&xid=60b884d3375ba5000133d5ce&xid_param1=88228&xid_param_2=&sid=SIDnoCkJEZJIqwBQCyaKfsUzmzPBfIe4AiieTPXa440FOgH6SBLZPs2tEIxzBFlrTbgwA61JIEDA-DvsRDxK4JpOSNZgAitYm0noCzgRmJvXivrvj-UaFXVH59xNNeZAH6uhUuknPhlCqTfmA&enctid=cbtt1kqauwlo&lpsn=WOWS+TMPLT1+CODE+BOOM+global&foris=1&teclient=1622634535267805048&utm_source=wlap&utm_medium=affiliate&utm_campaign=3jletnzb&utm_content=983">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href=": https://deadisland.fandom.com/wiki/Dead_Island">Website</a></button>
-            </div>
+             <a href="/games/34">
+             <div class="container">
+                <img src="../images/34/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Rules of Survival
+                </div>
+               <div class="oldprice">
+                    969.000 VND
+               </div>
+               <div class="price">
+                    279.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/34">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
+
         </div>
 
-    </div>
 
+        <div class="content">
+             <a href="/games/36">
+             <div class="container">
+                <img src="../images/36/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    DayZ
+                </div>
+               <div class="oldprice">
+                    492.000 VND
+               </div>
+               <div class="price">
+                    92.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/36">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
 
-    <div class="content">
-        <div class="container">
-            <img src="../images/16/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                ARK: Survival Evolved
-            </div>
-            <div class="subtitle">
-                Là một trò chơi video sinh tồn phiêu lưu hành động .Game không yêu cầu bạn phải vượt qua thử thách này thử thách kia, bạn chỉ cần làm những gì mình muốn nhưng với điều kiện là nhân vật của bạn phải sống thì mới chơi được game.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://apkpure.com/survivetheark-community/com.tapatalk.survivethearkcom">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://survivetheark.com/">Website</a></button>
-            </div>
+             <a href="/games/49">
+             <div class="container">
+                <img src="../images/49/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Apex Legends
+                </div>
+               <div class="oldprice">
+                    755.000 VND
+               </div>
+               <div class="price">
+                    176.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/49">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
+
+             <a href="/games/58">
+             <div class="container">
+                <img src="../images/58/hinh1.jpg"
+                    alt="" class="img">
+               <div class="title">
+                    Resident Evil
+                </div>
+               <div class="oldprice">
+                    524.000 VND
+               </div>
+               <div class="price">
+                    106.000 VND
+                </div>
+                <div class="frame">
+                    <button class="custom-btn btn-9"> <a href="/games/58">Mua Ngay</a></button>
+                </div>
+             </div>
+             </a>
+
         </div>
 
-        <div class="container">
-            <img src="../images/20/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                No Man’s Sky
-            </div>
-            <div class="subtitle">
-                Là một trò chơi sinh tồn được xây dựng xung quanh: khám phá, sinh tồn, chiến đấu và giao dịch. Người chơi được tự do thực hiện trong toàn bộvũ trụ thế giới mở xác định được tạo theo thủ tục, bao gồm hơn 18 nghìn tỷ hành tinh
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://www.fshare.vn/file/I5WSZCEQ9RUM?token=1622699310">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://www.nomanssky.com/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/27/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Free Fire
-            </div>
-            <div class="subtitle">
-                Garena Free Fire là game bắn súng sinh tồn miễn phí, đưa 50 người chơi tập hợp trên một hòn đảo xa xôi và bắt đầu chiến đấu tiêu diệt lẫn nhau với mục tiêu trở thành người sống sót cuối cùng.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://www.gameloop.com/en/game/fps/play-free-fire-on-pc">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://ff.garena.vn/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/34/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Rules of Survival
-            </div>
-            <div class="subtitle">
-                Mục tiêu là phải trở thành người sống sót duy nhất và để làm được điều này thì bạn sẽ phải trải qua những màn đấu súng gay cấn. Chiến thắng ở mỗi vòng đấu, người chơi sẽ được thưởng tiền để mua thêm các vật phẩm khác.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://www.rulesofsurvivalgame.com/">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="http://www.rulesofsurvivalgame.com/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/36/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                DayZ
-            </div>
-            <div class="subtitle">
-                DayZ có thể được xem là “Vua” của những trò chơi sinh tồn Zombie. Bạn phải sinh tồn và chống chọi lại những xác sống bị ảnh hưởng bởi đại dịch. Đi một mình, liên kết với đồng đội hoặc bất chấp tất cả, tất cả là do bạn chọn.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://en.softonic.com/download/dayz/windows/post-download">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://www.dayz.com/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/42/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Fortnite
-            </div>
-            <div class="subtitle">
-                Fortnite là một trò chơi sinh tồn phối hợp trên sandbox do Epic Games và People Can Fly phát triển. Trò chơi được hỗ trợ thông qua microtransaction để mua các tiền tệ trong trò chơi mà có thể được sử dụng để nâng cấp.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://fortnitevn.com/download/">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://fortnite.com/">Website</a></button>
-            </div>
-        </div>
-
-        <div class="container">
-            <img src="../images/45/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Minecraft
-            </div>
-            <div class="subtitle">
-                Lập trình viên Markus “Notch” Persso là người Thụy Điển đã sáng lập game Minecraft. Minecraft là một trò chơi 3D thuộc dạng thế giới mở, mà thực tế là thế giới trong minecraft cực lớn.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://itqnu.vn/minecraft/">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="https://www.minecraft.net/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/49/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Apex Legends
-            </div>
-            <div class="subtitle">
-                Đây là trò chơi battle royale miễn phí được phát triển bởi Respawn Entertainment. Lấy bối cảnh cùng vũ trụ với Titanfall tựa game Apex Legends ngay từ khi ra mắt đã thu hút hàng chục triệu người chơi trên toàn thế giới.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://bit.ly/2VWsnTh">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="http://playapex.com/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="content">
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <img src="../images/58/hinh1.jpg" alt="" class="img">
-            <div class="title">
-                Resident Evil
-            </div>
-            <div class="subtitle">
-                Resident Evil là một series trò chơi điện tử kinh dị sinh tồn và là thương hiệu truyền thông kinh dị Nhật Bản được Shinji Mikami và Tokuro Fujiwara tạo ra, được phát triển và thuộc sở hữu của Capcom.
-            </div>
-            <div class="frame">
-                <button class="custom-btn btn-9"> <a target="__blank" href="https://bitly.com.vn/htz55b">Download</a></button>
-                <button class="custom-btn btn-16"> <a target="__blank" href="http://residentevil.com/">Website</a></button>
-            </div>
-        </div>
-
-    </div>
-    <div id="footer">
-        <p class="copyright">Copyright © 2021, Powered by dangtrinhhh.</p>
-    </div>
 
 </body>
 
+<footer>
+    <div class ="makeby">
+        Được phát triển và thiết kế bởi 
+        <a href="https://github.com/unripe-mango">
+            unripe mango
+            <img class="mango" src="/data/mango.png">
+        </a>
+    </div>   
+</footer>
 </html>

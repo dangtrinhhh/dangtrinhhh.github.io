@@ -10,7 +10,7 @@ $(document).ready(function () {
   let autoScrollVar = true;
   let diff = 0;
 
-  let arrCities = ['Game number 1', 'Game number 2', 'Game number 3', 'Game number 4', 'Game number 5']; // Change number of slides in CSS also
+  let arrCities = ['Rockstar GTA V', 'G Liên Minh', 'PUPB', 'MineCraft', 'Free Fire']; // Change number of slides in CSS also
   let numOfCities = arrCities.length;
   let arrCitiesDivided = [];
 
