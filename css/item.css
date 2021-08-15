@@ -1,0 +1,161 @@
+#content2 {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.img-section {
+    width: 35%;
+}
+
+.text-section {
+    position: relative;
+    width: 58.5%;
+    float: left;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    line-height: 1.4;
+    background-color: #ffffff;
+}
+
+.game-image {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.game-image:hover {
+    border: 3px solid #000;
+}
+
+.share-icon {
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.fb-share-button {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: -2px;
+}
+
+.game-name {
+    font-size: 50px;
+    line-height: 1.4;
+    text-align: center;
+    color: #040fa8;
+}
+
+.subtitle1 {
+    font-size: 20px;
+    text-decoration: none;
+    font-size: inherit;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.subtitle2 {
+    font-size: 20px;
+    text-decoration: none;
+    font-size: inherit;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.text-section .price {
+    font-style: inherit;
+    text-align: left;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(270deg, rgba(95, 93, 93, 0.993), rgb(246, 247, 240)), url();
+}
+
+.item-btn,
+.item-btn2 {
+    width: 40%;
+    font-size: 20px;
+}
+
+.item-btn:hover {
+    background-color: rgb(52, 247, 52);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-btn2:hover {
+    background-color: rgb(70, 22, 247);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.frame {
+    padding-top: 20px;
+
+}
+
+.attribute {
+    text-align: left;
+    line-height: 1.4;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 0 5px;
+    border: 1px solid #000;
+}
+
+.a1 {
+    color: #fff;
+    background-image: linear-gradient(90deg, #e100ff, rgb(0, 153, 255)), url();
+}
+
+.a2 {
+    color: #fff;
+    background-image: linear-gradient(90deg, rgb(0, 79, 248), rgb(139, 15, 88)), url();
+}
+
+.a3 {
+    color: #fff;
+    background-image: linear-gradient(90deg, rgb(1, 179, 233), rgb(255, 0, 221)), url();
+}
+
+.olditemprice {
+    color: black;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+    text-decoration-line: line-through;
+  }
+  
+.itemprice {
+    color: red;
+    font-size: 45px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+.help {
+    margin-left: 50px;
+}
