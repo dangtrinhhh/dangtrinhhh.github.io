@@ -3,511 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GROUP 1 GAME STORE</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/slide.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/beauty.css">
-    <meta name="viewport" content="width=device-width, initial-scale=">
-    <link rel="stylesheet" href="/font/themify-icons-font/themify-icons.css">
-    <link rel="stylesheet" href="/font/fontawesome/css/all.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link el="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <title>DropDown Menu and slider</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="icon" href="/data/logo.png" type="image/x-icon" />
-    <style>
-        body {
-            background-color: #f5f5f5;
-        }
-    </style>
-    <div class="cont">
-        <div class="slider"></div>
-        <ul class="nav">
-    </div>
-
-    </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src="./js/script.js"></script>
-
-
 </head>
 
-
 <body>
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
+    <!-- slider -->
+    <div class="slider">
+        <div class="slides">
+            <!-- radio button start -->
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- radio button end -->
 
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+            <!-- slide images start -->
+            <div class="slide first">
+                <img src="./assets/img/itzy1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/slider1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/slider2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/slider3.jpg" alt="">
+            </div>
+            <!-- automatic navigation start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- slide images end -->
+            <!-- automatic navigation end -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
     </div>
-
+    <!-- End slider -->
     <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "111174981193210");
-        chatbox.setAttribute("attribution", "biz_inbox");
-        window.fbAsyncInit = function() {
-            FB.init({
-                xfbml: true,
-                version: 'v11.0'
-            });
-        };
+        //khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex;
+        // KHai bào hàm hiển thị slide
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
 
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+                slideIndex = 0
+            }
+            //tự động chuyển đổi slide sau 5s
+            setTimeout(showSlides, 5000);
+        }
+        //mặc định hiển thị slide đầu tiên 
+        showSlides(slideIndex = 0);
+
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
     </script>
-
-
-
-    <div id="body-section"></div>
-    <div class="nosale">Website đồ án hcmus<br>không mục đích thương mại</div>
-    <a target="_blank" href="https://www.fit.hcmus.edu.vn/"><img src="/data/fit1.png" class="fit"></a>
-    <div class="header">
-        GROUP1 GAME STORE
-    </div>
-
-    <div id="menu">
-        <!-- Begin nav -->
-        <ul id="nav">
-            <li>
-                <button class="custom-btnclass btn-14">
-                 <a class="navname" href="#">
-                     Thể loại
-                 </a>
-             </button>
-                <ul class="subnav">
-                    <li><a href="/class/nhapvai.html">Nhập vai</a></li>
-                    <li><a href="/class/chienthuat.html">Chiến thuật</a></li>
-                    <li><a href="/class/bansung.html">Bắn súng</a></li>
-                    <li><a href="/class/sinhton.html">Sinh tồn</a></li>
-                    <li><a href="/class/giaitri.html">Giải Trí</a></li>
-                    <li><a href="/class/duaxe.html">Đua xe</a></li>
-                    <li><a href="/class/thoitrang.html">Thời Trang</a></li>
-                </ul>
-
-            </li>
-            <button class="custom-btnviet btn-14"> <a target="__blank" href="../class/gameg1.html">Game G1</a></button>
-            <button class="custom-btnviet btn-14"> <a target="__blank" href="../member.html">Thành Viên</a></button>
-            <button class="custom-btnviet btn-14"> <a target="__blank" href="https://www.facebook.com/g1gamestore">Liên Hệ</a></button>
-            <button class="custom-btnviet btn-14"> <a target="__blank" href="../apply">Đăng Game</a></button>
-
-
-
-
-            <!-- End nav -->
-        </ul>
-
-
-    </div>
-
-    <div class="vspace"></div>
-
-
-
-
-    <div class="content">
-        <a href="/games/1">
-            <div class="container">
-                <img src="images/1/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Assassin's Creed II
-                </div>
-                <img class="saleoff" src="/data/bigsale.gif">
-                <div class="oldprice">
-                    363.000 VND
-                </div>
-
-
-                <div class="price">
-                    86.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/1">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/2">
-            <div class="container">
-                <img src="images/2/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    GTA V
-                </div>
-                <img class="saleoff" src="/data/bigsale.gif">
-                <div class="oldprice">
-                    880.000 VND
-                </div>
-                <div class="price">
-                    229.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/2">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/3">
-            <div class="container">
-                <img src="images/3/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Rise of Kingdoms
-                </div>
-                <div class="oldprice">
-                    381.000 VND
-                </div>
-                <div class="price">
-                    80.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/3">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/4">
-            <div class="container">
-                <img src="images/4/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Little Nightmares
-                </div>
-                <div class="oldprice">
-                    267.000 VND
-                </div>
-                <div class="price">
-                    126.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/4">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-    </div>
-
-    <div class="content">
-        <a href="/games/5">
-            <div class="container">
-                <img src="images/5/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Genshin Impact
-                </div>
-                <div class="oldprice">
-                    502.000 VND
-                </div>
-                <div class="price">
-                    192.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/5">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/6">
-            <div class="container">
-                <img src="images/6/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Free Fire
-                </div>
-                <img class="saleoff" src="/data/bigsale.gif">
-                <div class="oldprice">
-                    2.000 VND
-                </div>
-                <div class="price">
-                    1.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/6">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/7">
-            <div class="container">
-                <img src="images/7/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    CORRUPTION 2029
-                </div>
-                <div class="oldprice">
-                    853.000 VND
-                </div>
-                <div class="price">
-                    447.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/7">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/8">
-            <div class="container">
-                <img src="images/8/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    HITMAN
-                </div>
-                <div class="oldprice">
-                    807.000 VND
-                </div>
-                <div class="price">
-                    199.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/8">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-    </div>
-
-
-    <div class="content">
-        <a href="/games/9">
-            <div class="container">
-                <img src="images/9/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Fortnite
-                </div>
-
-                <div class="oldprice">
-                    191.000 VND
-                </div>
-                <div class="price">
-                    115.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/9">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/10">
-            <div class="container">
-                <img src="images/10/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Overwatch
-                </div>
-                <div class="oldprice">
-                    258.000 VND
-                </div>
-                <div class="price">
-                    58.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/10">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/11">
-            <div class="container">
-                <img src="images/11/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    League of Legends
-                </div>
-                <img class="saleoff" src="/data/bigsale.gif">
-                <div class="oldprice">
-                    260.000 VND
-                </div>
-                <div class="price">
-                    0.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/11">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/12">
-            <div class="container">
-                <img src="images/12/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Minecraft
-                </div>
-                <div class="oldprice">
-                    355.000 VND
-                </div>
-                <div class="price">
-                    162.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/12">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-    </div>
-
-
-    <div class="content">
-        <a href="/games/13">
-            <div class="container">
-                <img src="images/13/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Left 4 Dead 2
-                </div>
-                <div class="oldprice">
-                    180.000 VND
-                </div>
-                <div class="price">
-                    52.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/13">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/14">
-            <div class="container">
-                <img src="images/14/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Crusader Kings II
-                </div>
-                <div class="oldprice">
-                    821.000 VND
-                </div>
-                <div class="price">
-                    208.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/14">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/15">
-            <div class="container">
-                <img src="images/15/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    Rise of the Tomb Raider
-                </div>
-                <img class="saleoff" src="/data/bigsale.gif">
-                <div class="oldprice">
-                    337.000 VND
-                </div>
-                <div class="price">
-                    82.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/15">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-        <a href="/games/16">
-            <div class="container">
-                <img src="images/16/hinh1.jpg" alt="" class="img">
-                <div class="title">
-                    ARK: Survival Evolved
-                </div>
-                <div class="oldprice">
-                    624.000 VND
-                </div>
-                <div class="price">
-                    246.000 VND
-                </div>
-                <div class="frame">
-                    <button class="custom-btn btn-9"> <a href="/games/16">Mua Ngay</a></button>
-                </div>
-            </div>
-        </a>
-
-    </div>
-    <div id="modal" class="modal js-modal">
-        <form>
-            <div class="modal-container js-modal-container">
-                <div class="modal-close">
-                    <i class="ti-close"></i>
-                </div>
-
-                <header class="modal-header">
-                    Chào mừng đến với G1 Game Store
-                </header>
-
-                <div class="modal-body">
-                    <!-- For: only use with id -->
-                    <label for="ticket-quantity" class="modal-label">
-                <i class="ti-user"></i>
-                Tên tài khoản
-            </label>
-                    <input name="account" id="ticket-quantity" type="text" class="modal-input" placeholder="Account name" required="">
-
-                    <label for="ticket-email" class="modal-label">
-                <i class="ti-shopping-cart"></i>
-                Mật khẩu
-            </label>
-                    <input name="password" id="ticket-email" type="password" class="modal-input" placeholder="Your password" required="">
-
-                    <button id="buy-tickets" type="submit" class="buy-tickets">
-                Đăng nhập
-            </button>
-                </div>
-
-                <footer class="modal-footer">
-                    <div class="modal-register">
-                        <p>
-                            <a href="">Register</a>
-                        </p>
-                    </div>
-                    <div class="modal-help">
-                        <p>
-                            Need <a href="">help?</a>
-                        </p>
-                    </div>
-                </footer>
-            </div>
-        </form>
-    </div>
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-            // const loggings = document.querySelector('.buy-tickets')
-        const closeBtn = document.querySelector('.modal-close')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modal = document.querySelector('.js-modal')
-
-
-        modal.classList.add("open")
-        modal.classList.add("animated")
-        modal.classList.add("FadeIn")
-
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-
-
-        function hideBuyTickets() {
-            modal.classList.remove("open")
-        }
-
-        // loggings.addEventListener('click', hideBuyTickets)
-
-        closeBtn.addEventListener('click', hideBuyTickets)
-
-        modal.addEventListener('click', hideBuyTickets)
-
-        modalContainer.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
     </script>
 
 </body>
-
-<footer>
-    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5647.043252887789!2d106.79923072183007!3d10.874618325771925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCBDxqEgc-G7nyBMaW5oIFRydW5nLCBUaOG7pyDEkOG7qWMsIMSQSFFHIFRQSENNLg!5e1!3m2!1svi!2s!4v1624378021411!5m2!1svi!2s"
-        width="70%" height="300" style="border:0;"></iframe>
-    <div class="makeby">
-        Được phát triển và thiết kế bởi <a href="https://github.com/unripe-mango">unripe mango<img class="mango" src="/data/mango.png"></a>
-
-    </div>
-
-</footer>
 
 </html>
