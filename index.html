@@ -7,39 +7,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <title>Home</title>
 </head>
 
 <body>
-    <div>
-        <div id="header">
-            <ul>
-                <li class="author" style="font-size: 1.5vw;">dangtrinh's blog</li>
-            </ul>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <section class="showcase">
+        <header>
+            <h2 class="logo" style="display: inline-block;">dangtrinh's blog</h2>
+            <div class="toggle">
+                <div class="menu">
+                    <ul>
+                        <li class="link-menu">
+                            <p><span><i class="fa fa-angle-double-right icon1"></i></span><a href="#" class="icon-right1"> Home</a>
+                            </p>
+                        </li>
+                        <li class="link-menu">
+                            <p><span><i class="fa fa-angle-double-right icon2"></i></span><a href="#" class="icon-right2"> About</a>
+                            </p>
+                        </li>
+                        <li class="link-menu">
+                            <p><span><i class="fa fa-angle-double-right icon3"></i></span><a href="#" class="icon-right3"> Contact</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <video src="./assets/video/background-video2.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Hi there, </h2>
+            <p>I'm dangtrinh, A web developer</p>
+            <p>I'm from Ho Chi Minh City, Viet Nam</p>
+            <p>I'm looking for internship.</p>
+            <a href="#">Explore</a>
         </div>
-        <video autoplay loop class="home-background" src="./assets/video/background-video.mp4"></video>
-        <ul class="slideshow">
-            <li><span></span>
-                <div class="welcome">
-                    <h3><strong>Hi there, I'm dangtrinhhh</strong></h3>
-                </div>
+        <ul class="social">
+            <li>
+                <a href="https://www.facebook.com/dangtrinhhh/" target="_blank"><img src=""><i class="fab fa-3x fa-facebook-f"></i></a>
             </li>
-            <li><span></span>
-                <div class="welcome2">
-                    <h3><strong>A web developer.</strong></h3>
-                </div>
+            <li>
+                <a href="https://twitter.com/dangtrinhhh" target="_blank"><img src=""><i class="fab fa-3x fa-twitter"></i></a>
             </li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
+            <li>
+                <a href="https://github.com/dangtrinhhh" target="_blank"><img src=""><i class="fab fa-3x fa-github"></i></a>
+            </li>
         </ul>
-    </div>
+    </section>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const menu = document.querySelector('.menu');
+        const closeBtn = document.querySelector('.active');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle("open")
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+
+
+        $(document).ready(function() {
+            $('.fa-angle-double-right').hide();
+
+            $(".icon-right1").mouseenter(function() {
+                $('.icon1').slideDown();
+                $('.icon2').hide();
+                $('.icon3').hide();
+
+            });
+            $(".icon-right1").mouseleave(function() {
+                $('.icon1').hide();
+            });
+
+
+            $(".icon-right2").mouseenter(function() {
+                $('.icon2').slideDown();
+                $('.icon1').hide();
+                $('.icon3').hide();
+            });
+            $(".icon-right2").mouseleave(function() {
+                $('.icon2').hide();
+            });
+
+
+            $(".icon-right3").mouseenter(function() {
+                $('.icon3').slideDown();
+                $('.icon1').hide();
+                $('.icon2').hide();
+            });
+            $(".icon-right3").mouseleave(function() {
+                $('.icon3').hide();
+            });
+        });
+    </script>
 </body>
 
 </html>
