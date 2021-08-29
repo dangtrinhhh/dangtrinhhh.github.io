@@ -54,20 +54,24 @@ body {
     display: flex;
     top: 0;
     left: 0;
+    flex-wrap: wrap;
 }
 
 #nav ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #nav ul li {
-    padding: 0.5em 2em;
+    margin: 0.5em 2em;
+    padding: 5px 20px;
     color: #fff;
 }
 
 #nav ul li:not(.logo):hover {
-    background-color: #ccc;
-    color: #000;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+    border-radius: 20px;
+    transition: .8s;
     cursor: pointer;
 }
 
@@ -85,7 +89,7 @@ html {
 }
 
 .header-text h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-stretch: ultra-condensed;
     line-height: 1;
 }
@@ -144,6 +148,7 @@ p {
 }
 
 .hobby {
+    min-width: 88px;
     padding-right: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -254,7 +259,7 @@ p {
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         border: 1px solid #000;
     }
     #nav-bar {
