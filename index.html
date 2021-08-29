@@ -16,6 +16,12 @@
 </head>
 
 <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
     <section class="showcase">
         <header>
             <h2 class="logo" style="display: inline-block;">dangtrinh's blog</h2>
@@ -27,11 +33,11 @@
                             </p>
                         </li>
                         <li class="link-menu">
-                            <p><span><i class="fa fa-angle-double-right icon2"></i></span><a href="#" class="icon-right2"> About</a>
+                            <p><span><i class="fa fa-angle-double-right icon2"></i></span><a href="/about" class="icon-right2"> About</a>
                             </p>
                         </li>
                         <li class="link-menu">
-                            <p><span><i class="fa fa-angle-double-right icon3"></i></span><a href="#" class="icon-right3"> Contact</a>
+                            <p><span><i class="fa fa-angle-double-right icon3"></i></span><a href="/about.html" class="icon-right3"> Contact</a>
                             </p>
                         </li>
                     </ul>
@@ -43,19 +49,22 @@
         <div class="text">
             <h2>Hi there, </h2>
             <p>I'm dangtrinh, A web developer</p>
-            <p>I'm from Ho Chi Minh City, Viet Nam</p>
-            <p>I'm looking for internship.</p>
+            <p>from Ho Chi Minh City, Viet Nam</p>
+            <p>I'm looking for an internship.</p>
             <a href="#">Explore</a>
         </div>
         <ul class="social">
             <li>
-                <a href="https://www.facebook.com/dangtrinhhh/" target="_blank"><img src=""><i class="fab fa-3x fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/dangtrinhhh/" target="_blank" alt="dangtrinh's facebook"><img src=""><i class="fab fa-3x fa-facebook-f"></i></a>
             </li>
             <li>
-                <a href="https://twitter.com/dangtrinhhh" target="_blank"><img src=""><i class="fab fa-3x fa-twitter"></i></a>
+                <a href="https://twitter.com/dangtrinhhh" target="_blank" alt="dangtrinh's twitter"><img src=""><i class="fab fa-3x fa-twitter"></i></a>
             </li>
             <li>
-                <a href="https://github.com/dangtrinhhh" target="_blank"><img src=""><i class="fab fa-3x fa-github"></i></a>
+                <a href="https://github.com/dangtrinhhh" target="_blank" alt="dangtrinh's github"><img src=""><i class="fab fa-3x fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/%C4%91%C4%83ng-tr%C3%ACnh-670935218/" target="_blank" alt="dangtrinh's linkedIn"><img src=""><i class="fab fa-3x fa-github"></i></a>
             </li>
         </ul>
     </section>
@@ -105,6 +114,26 @@
                 $('.icon3').hide();
             });
         });
+
+        // Chat section
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "111174981193210");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 </body>
 
