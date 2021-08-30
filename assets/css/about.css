@@ -258,7 +258,7 @@ p {
     #main-section {
         margin-left: 5vw;
         margin-right: 5vw;
-        margin-top: 100px;
+        margin-top: 150px;
         margin-bottom: 50px;
         border: 1px solid #000;
     }
@@ -290,5 +290,12 @@ p {
         flex: 1;
         margin-left: 50px;
         margin-right: 50px;
+    }
+    .content2 {
+        margin-left: -20px;
+    }
+    .contact-info {
+        margin-left: -100px;
+        margin-bottom: -50px;
     }
 }
