@@ -338,7 +338,7 @@ p {
     margin: 40px 20px;
     margin-top: 100px;
     background-color: #303841;
-
+    border-radius: 5px;
 }
 
 .project-image {
@@ -346,6 +346,8 @@ p {
     width: 100%;
     object-fit: cover;
     margin-left: -20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #project-section .project-title {
@@ -371,4 +373,21 @@ p {
 
 img {
     object-fit: cover;
+}
+
+.btn-show-all {
+    font-size: 1.2rem;
+    background: #303841;
+    transition: background 0.3s ease-out;
+    font-family: 'Poppins', sans-serif;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.btn-show-all:hover {
+    background: #303841;
+    color:#ff7f50;
 }
