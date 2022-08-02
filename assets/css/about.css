@@ -348,6 +348,7 @@ p {
     margin-left: -20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    min-height: 311px;
 }
 
 #project-section .project-title {
