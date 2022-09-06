@@ -121,7 +121,6 @@ h4 {
 
 h5 {
     font-stretch: ultra-condensed;
-    text-transform: uppercase;
     font-size: 1em;
 }
 
@@ -198,10 +197,11 @@ p {
 
 #project-section h2 {
     max-width: 640px;
-    font-size: 40px;
+    font-size: 5vw;
     border-bottom: 0.2rem solid rgb(236, 105, 105);
     margin: auto;
     padding-top: 100px;
+    padding-bottom: 20px;
 }
 
 #project-section .project {
@@ -344,6 +344,28 @@ footer {
     background-color: #628df3;
   }
 
+  @media (max-width: 500px) {
+    #nav ul li {
+        padding: 0;
+    }
+
+    .project-image {
+        min-height: 200px;
+    }
+
+    #project-section .project-title {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.4rem;
+    }
+
+    .btn-show-all {
+        font-size: 1rem;
+    }
+  }
+
   @media (min-width: 1024px) {
     #nav-bar {
         position: fixed;
@@ -391,6 +413,13 @@ footer {
         margin-bottom: 50px;
         border: 1px solid #000;
     }
+    .avatar {
+        width: 25vw;
+        height: 32vw;
+        margin-top: 50px;
+        margin-left: 50px;
+        border: 1px solid #000;
+    }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -405,8 +434,8 @@ footer {
         border: 1px solid #000;
     }
     .avatar {
-        width: 15vw;
-        height: 20vw;
+        width: 25vw;
+        height: 30vw;
         margin-top: 50px;
         margin-left: 50px;
         border: 1px solid #000;
@@ -433,6 +462,13 @@ footer {
     }
     #project-section .project {
         margin-left: 0px;
+    }
+    .avatar {
+        width: 25vw;
+        height: 30vw;
+        margin-top: 50px;
+        margin-left: 50px;
+        border: 1px solid #000;
     }
 }
 
@@ -521,5 +557,11 @@ footer {
         right: 20px;
         font-size: 15px;
         padding: 15px 17px;
-      }
+    }
+}
+
+@media (min-width: 860px) {
+    #project-section h2 {
+        font-size: 40px;
+    }
 }
